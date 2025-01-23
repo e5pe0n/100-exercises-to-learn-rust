@@ -31,7 +31,7 @@ impl TicketStore {
         id
     }
 
-    pub fn get(&self, id: TicketId) -> Option<&Ticket> {
-        self.tickets.get(&id)
+    pub fn get(&self, id: &TicketId) -> Option<&Ticket> {
+        self.tickets.get(id)
     }
 }
